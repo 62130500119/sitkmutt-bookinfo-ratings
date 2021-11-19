@@ -44,3 +44,9 @@ jobs:
                 "COMMIT_SHA": "${{ github.sha }}"
               }
             }
+  acceptance-test:
+    steps:
+      - run:
+          name: Health Check
+          command: curl http://sitkmutt.bookinfo.dev.opsta.net/student48/ratings/health | grep "Ratings is good"
+    
