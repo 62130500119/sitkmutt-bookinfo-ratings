@@ -49,5 +49,5 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Acceptance Test
-        run: curl http://sitkmutt.bookinfo.dev.opsta.net/student[X]/ratings/health | grep "Ratings is good"
+        run: curl http://sitkmutt.bookinfo.dev.opsta.net/student48/ratings/health | grep "Ratings is good"
     
