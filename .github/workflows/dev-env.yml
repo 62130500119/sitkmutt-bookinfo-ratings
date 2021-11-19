@@ -46,7 +46,6 @@ jobs:
             }
   acceptance-test:
     needs: deploy
-    runs-on: ubuntu-20.04
     steps:
       - name: Acceptance Test
         run: curl http://sitkmutt.bookinfo.dev.opsta.net/student[X]/ratings/health | grep "Ratings is good"
